@@ -25,4 +25,45 @@ rails new <projectname>
 ###start rails server
 rails server
 
+###some rails commands
+rails server (rails s)
+rails console (rails c)
+rails generate (rails g)
 
+rails generate controller root
+
+run your database migrations:
+rails db:migrate
+
+rails generate controller home index
+
+yarn add bootstrap jquery popper.js
+
+add bootstrap css and js - https://getbootstrap.com/docs/5.2/getting-started/introduction/
+in application.html.erb - app/views/layout/application.html.erb
+
+create model
+
+rails g model Post title:string description:text
+
+schema will be found in test/fixtures/posts.yml. following command will execute db migration
+rails db:migrate
+
+command to run
+-rails console
+-Post.connection
+-a=Post
+-a=Post.new
+-a.title="hello"
+-a.description="world"
+-a.save
+-a
+-Post.find(1)
+-Post.find(1).destroy
+
+use "bundle" command when you are uncomment gemfile line.
+
+-rails g controller sessions
+-rails g controller users
+-rails g model User email:uniq password:digest
+-rails db:migrate
